@@ -1,0 +1,52 @@
+Result:
+    ImageCLEF12 dataset             MobileNetV2     learning_rate = 0.001: 60.70%
+    ImageCLEF12 Reduced dataset     MobileNetV2     learning_rate = 0.001: 73.39%
+
+    Flavia dataset                  MobileNetV2     learning_rate = 0.001: 99.74%
+    Swedish dataset                 MobileNetV2     learning_rate = 0.001: 99.11%
+
+Papers:
+    https://ieeexplore.ieee.org/document/9850987
+    https://www.sciencedirect.com/science/article/pii/S1537511016301465 focus on weeds
+    https://arxiv.org/pdf/1512.03385.pdf about Residual layer
+    https://ieeexplore.ieee.org/document/9751066
+    
+
+New terms:
+    ESPCA: enhanced Spearman's principal component analysis was employed to address the overfitting problem.
+    CNN: covolutional neural network
+    HP-BSGD: hyperparameter-tuned batch-updated stochastic gradient descent 
+    PNN: probability newral network
+    Textural Analysis Method
+    Gray Level Co-occurrence Matrix
+    Gabor filters 
+    Log Gabor Filters
+    K-Nearest Neighbour
+    Support Vector Machine
+    Decision Tree
+    Random Forest
+    Naïve Bayes
+    Logistic Regression
+    Multilayer Perceptron
+    Gradient Boosting
+    Stochastic Gradient DESCENT(SGD)
+    Residual layers
+    Fully connected layers: is this dense layer???
+    Batch normalization layer
+    Oversampling
+    Undersampling
+    dual deep learning architecture
+
+Problems with imageCLEF12 dataset:
+    - Too many classes 
+    - Some classes have extremely low data
+
+New dataset:
+    Benchmark datasets:
+        https://flavia.sourceforge.net/: from https://www.researchgate.net/publication/1757884_A_Leaf_Recognition_Algorithm_for_Plant_Classification_Using_Probabilistic_Neural_Network
+            32 classes, 1907 images
+            using DDLA: 98.71%
+
+        https://www.cvl.isy.liu.se/en/research/datasets/swedish-leaf/: from https://scholar.google.com/scholar?q=Computer%20Vision%20Classification%20of%20Leaves%20from%20Swedish%20Trees
+            15 classes, 1125 images
+            using DDLA: 99.41%
