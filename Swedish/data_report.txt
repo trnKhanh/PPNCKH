@@ -1,0 +1,16 @@
+Swedish
+	Populus tremula: 75
+	Tilia: 75
+	Populus: 75
+	Acer: 75
+	Ulmus carpinifolia: 75
+	Betula pubescens: 75
+	Sorbus aucuparia: 75
+	Sorbus intermedia: 75
+	Salix sinerea: 75
+	Ulmus glabra: 75
+	Fagus silvatica: 75
+	Salix alba 'Sericea': 75
+	Alnus incana: 75
+	Quercus: 75
+	Salix aurita: 75

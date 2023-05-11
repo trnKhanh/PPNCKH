@@ -1,0 +1,33 @@
+Flavia
+	goldenrain tree: 59
+	wintersweet: 52
+	Chinese Toon: 65
+	true indigo: 73
+	Japanese maple: 56
+	Canadian poplar: 64
+	pubescent bamboo: 59
+	Japanese cheesewood: 63
+	castor aralia: 52
+	Chinese horse chestnut: 63
+	Japan Arrowwood: 60
+	yew plum pine: 60
+	Anhui Barberry: 65
+	ginkgo, maidenhair tree: 62
+	Chinese tulip tree: 53
+	trident maple: 53
+	tangerine: 56
+	oleander: 66
+	camphortree: 65
+	Ford Woodlotus: 52
+	southern magnolia: 57
+	Nanmu: 62
+	Glossy Privet: 55
+	sweet osmanthus: 56
+	Chinese redbud: 72
+	deodar: 77
+	Beale's barberry: 55
+	Crape myrtle, Crepe myrtle: 61
+	Big-fruited Holly: 50
+	Chinese cinnamon: 55
+	peach: 54
+	Japanese Flowering Cherry: 55

@@ -3,13 +3,25 @@ import shutil
 
 if __name__ == "__main__":
     num = []
+    print("Reduced ImageCLEF12 train")
     for file in os.scandir("./reduced_train"):
-        # print(os.listdir(file.path)[0])
-        # if len(os.listdir(file.path)) < 50:
-        #     shutil.rmtree(f"./reduced_train/{file.name}")
-        #     shutil.rmtree(f"./reduced_test/{file.name}")
-        num.append(len(os.listdir(file.path)))
+        print(f"\t{file.name}", end=": ")
+        print(len(os.listdir(file.path)))
+        
+    print("Reduced ImageCLEF12 test")
+    for file in os.scandir("./reduced_test"):
+        print(f"\t{file.name}", end=": ")
+        print(len(os.listdir(file.path)))
     
+    print("ImageCLEF12 train")
+    for file in os.scandir("./train"):
+        print(f"\t{file.name}", end=": ")
+        print(len(os.listdir(file.path)))
+    
+    print("ImageCLEF12 test")
+    for file in os.scandir("./test"):
+        print(f"\t{file.name}", end=": ")
+        print(len(os.listdir(file.path)))
     # num = num.sort()
-    num.sort()
-    print(num)
+    # num.sort()
+    # print(num)
