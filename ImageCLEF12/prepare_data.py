@@ -3,8 +3,8 @@ import xml.dom.minidom
 import shutil
 
 if __name__ == "__main__":
-    train_dir = "train"
-    test_dir = "test"
+    train_dir = "scan_train"
+    test_dir = "scan_test"
 
     if not os.path.isdir(train_dir):
         os.mkdir(train_dir)
@@ -14,8 +14,8 @@ if __name__ == "__main__":
         if file.path.endswith(".jpg"):
             id = file.path[:-4]
             information = xml.dom.minidom.parse(f'{id}.xml')
-            # if information.getElementsByTagName("Type")[0].firstChild.nodeValue == 'photograph':
-            #     continue
+            if information.getElementsByTagName("Type")[0].firstChild.nodeValue == 'photograph':
+                continue
 
             name = information.getElementsByTagName("ClassId")[0].firstChild.nodeValue
             print(name)
@@ -30,8 +30,8 @@ if __name__ == "__main__":
         if file.path.endswith(".jpg"):
             id = file.name[:-4]
             information = xml.dom.minidom.parse(f'./FourniApresCLEF2012/data/testwithgroundtruthxml/{id}.xml')
-            # if information.getElementsByTagName("Type")[0].firstChild.nodeValue == 'photograph':
-            #     continue
+            if information.getElementsByTagName("Type")[0].firstChild.nodeValue == 'photograph':
+                continue
             
             name = information.getElementsByTagName("ClassId")[0].firstChild.nodeValue
             print(name)

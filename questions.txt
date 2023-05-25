@@ -1,0 +1,5 @@
+cách dùng threshold (cụ thể là Otsu method), xây dựng một lớp giữa
+cách đưa đều đó vào model, vì không thể chỉ đưa mỗi ảnh mask (do chỉ mô tả hình dạng)
+
+Hỏi về lỗi:
+    Chatgpt và stackoverflow không sửa được lỗi
