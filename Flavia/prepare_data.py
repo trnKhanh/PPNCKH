@@ -29,6 +29,6 @@ if __name__ == "__main__":
         
         for id in range(item["first"], item["last"] + 1):
             shutil.copy(f"Leaves/{id}.jpg", f'{train_dir}/{item["name"]}')
-    img_num.sort()
-    print(img_num)
-        
+    # img_num.sort()
+    # print(img_num)
+

@@ -67,6 +67,7 @@ if __name__ == "__main__":
     # lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
     #     initial_learning_rate, decay_steps=100000, decay_rate=0.96, staircase=True
     # )
+
     optimizer = tf.keras.optimizers.legacy.Adam(learning_rate=initial_learning_rate)
     
     model.compile(optimizer=optimizer, 
@@ -85,6 +86,7 @@ if __name__ == "__main__":
 
     loss = history.history['loss']
     val_loss = history.history['val_loss']
+    
     plt.figure(figsize=(8, 8))
     plt.subplot(2, 1, 1)
     plt.plot(acc, label='Training Accuracy')
