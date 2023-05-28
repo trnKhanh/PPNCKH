@@ -1,10 +1,41 @@
 Result:
-    ImageCLEF12 dataset             MobileNetV2     learning_rate = 0.001: 60.70%
-    ImageCLEF12 Reduced dataset     MobileNetV2     learning_rate = 0.001: 73.39%
+W1
+    ImageCLEF12 dataset                 MobileNetV2         learning_rate = 0.001:      60.70%
+    ImageCLEF12 Reduced dataset         MobileNetV2         learning_rate = 0.001:      73.39%
 
-    Flavia dataset                  MobileNetV2     learning_rate = 0.001: 99.74%
-    Swedish dataset                 MobileNetV2     learning_rate = 0.001: 99.11%
+    Flavia dataset                      MobileNetV2         learning_rate = 0.001:      99.74%
+    Swedish dataset                     MobileNetV2         learning_rate = 0.001:      99.11%
+W2
+    ImageCLEF12 Oversampled dataset     MobileNetV2         learning_rate = schedule:   57.87%
+    ImageCLEF12 Oversampled dataset     EfficentNetB04      learning_rate = schedule:   56.83%
 
+    ImageCLEF12 dataset                 MobileNetV2         learning_rate = schedule:   59.78%
+    ImageCLEF12 dataset                 EfficentNetB04      learning_rate = schedule:   55.17%
+
+    ImageCLEF12 dataset (greyscaling)                 MobileNetV2         learning_rate = schedule:   56.41%
+
+    Flavia dataset                      MobileNetV2         learning_rate = schedule:   98.96%
+    Swedish dataset                     MobileNetV2         learning_rate = schedule:   97.92%
+    
+    Comments on ImageCLEF12 dataset:
+        - Phillyrea angustifolia is the main reasons why evaluated accuracy on test dataset is low.
+        - Imbalance data between test and train dataset; and between each species.
+        - Oversampling by simply copying did not show better results.
+        - The impact of schedule learning rate is decent.
+        - EfficientNetB4 has even shown worse results, several possible reasons:
+            + overfitting
+            + imabalance nature of test dataset -> very low accuracy on dataset compared with train dataset
+            + bugs or bad scripts (implementation problems) are very unlikely
+        - Many papers using ImageCLEF12 dataset and giving high accuracy reduced dataset to only several species or chose only scan/scan-like images. Other than that, highest accuracy is likely to be 61%
+        - This dataset (ImageCLEF12) is losing its interests based on the fact that there are no recents papers using ImageCLEF12 dataset
+    TODO: 
+        - Try greyscaling
+        - Combining test with train dataset and split in order to balance test and train data
+
+W3:
+    ImageCLEF12 scan dataset            MobileNetV2         learning_rate = schedule:   loss: 1.9184 - accuracy: 0.6404
+    ImageCLEF12 scan dataset            EfficentNetB04      learning_rate = schedule:   loss: 2.2487 - accuracy: 0.5939
+    
 Papers:
     https://ieeexplore.ieee.org/document/9850987
     https://www.sciencedirect.com/science/article/pii/S1537511016301465 focus on weeds
