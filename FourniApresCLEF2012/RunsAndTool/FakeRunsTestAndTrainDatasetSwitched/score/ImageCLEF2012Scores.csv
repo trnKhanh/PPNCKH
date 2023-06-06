@@ -1,0 +1,7 @@
+RunFileName;Scan _OfficialScore_InverseRank;pseudoscan _OfficialScore_InverseRank;photograph _OfficialScore_InverseRank;
+FakeRunsTestAndTrainDatasetSwitched/perfectRun.txt;1.0000000;1.0000000;1.0000000;
+FakeRunsTestAndTrainDatasetSwitched/randomRun_0.txt;0.0163523;0.0115434;0.0108546;
+FakeRunsTestAndTrainDatasetSwitched/randomRun_1.txt;0.0292058;0.0342224;0.0276721;
+FakeRunsTestAndTrainDatasetSwitched/randomRun_2.txt;0.0143828;0.0108308;0.0298644;
+FakeRunsTestAndTrainDatasetSwitched/randomRun_3.txt;0.0196610;0.0266654;0.0090373;
+FakeRunsTestAndTrainDatasetSwitched/randomRun_4.txt;0.0242253;0.0120756;0.0089112;
