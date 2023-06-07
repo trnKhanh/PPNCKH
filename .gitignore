@@ -3,6 +3,7 @@
 *.jpg
 *.jpeg
 Swedish/train/*
+Flavia/train/*
 ImageCLEF12/FourniApresCLEF2012/*
 ImageCLEF12/__MACOSX/*
 */Model/*

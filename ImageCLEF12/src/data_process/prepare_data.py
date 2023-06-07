@@ -3,8 +3,8 @@ import xml.dom.minidom
 import shutil
 
 if __name__ == "__main__":
-    train_dir = "scan_train"
-    test_dir = "scan_test"
+    train_dir = "data/scan_train"
+    test_dir = "data/scan_test"
 
     if not os.path.isdir(train_dir):
         os.mkdir(train_dir)

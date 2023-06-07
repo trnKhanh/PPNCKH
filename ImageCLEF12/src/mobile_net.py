@@ -109,11 +109,11 @@ if __name__ == "__main__":
     BATCH_SIZE = 32
     EPOCHS = 30
     name = "mobilev2_dual_10"
-    train_dir = "../Data/scan_train"
-    test_dir = "../Data/scan_test"
+    train_dir = "Data/scan_train"
+    test_dir = "Data/scan_test"
 
-    save_dir = f"../Plots/{name}"
-    model_dir = f"../Model/{name}"
+    save_dir = f"Plots/{name}"
+    model_dir = f"Model/{name}"
 
     if not os.path.isdir(save_dir):
         os.mkdir(save_dir)
@@ -125,7 +125,6 @@ if __name__ == "__main__":
                                                                                     batch_size=BATCH_SIZE,
                                                                                     image_size=IMAGE_SIZE)
     
-
 
     if len(sys.argv) > 1:
         is_train = sys.argv[1]

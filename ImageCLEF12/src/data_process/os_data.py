@@ -2,8 +2,8 @@ import os
 import shutil
 
 if __name__ == '__main__':
-    train_dir = "./oversampled_train"
-    test_dir = "./oversampled_test"
+    train_dir = "data/oversampled_train"
+    test_dir = "data/oversampled_test"
 
     if not os.path.isdir(train_dir):
         os.mkdir(train_dir)
