@@ -1,20 +1,10 @@
-import cv2
-
-import matplotlib.pyplot as plt
-import numpy as np
 import os
 import tensorflow as tf
-import tensorflow_ranking as tfr
-import seaborn as sn
-import pandas as pd
-import shutil
 
 from skimage.filters import threshold_otsu
 from Utils.plots import *
 from load_data import *
 import sys
-import tensorflow as tf
-from skimage.filters import threshold_otsu
 
 class OtsuThresholdLayer(tf.keras.layers.Layer):
     def __init__(self):
@@ -104,16 +94,21 @@ def train(model, train_dataset, valid_dataset):
     return history
 
 if __name__ == "__main__":
+    if tf.test.gpu_device_name():
+        print('Default GPU Device: {}'.format(tf.test.gpu_device_name()))
+    else:
+        print("No GPU found. Please check your GPU installation.")
+    # print(tf.config.list_physical_devices('GPU'))
     IMAGE_SIZE = (224, 224)
     IMAGE_SHAPE = IMAGE_SIZE + (3,)
     BATCH_SIZE = 32
     EPOCHS = 30
     name = "mobilev2_dual_10"
-    train_dir = "Data/scan_train"
-    test_dir = "Data/scan_test"
+    train_dir = "../data/scan_train"
+    test_dir = "../data/scan_test"
 
-    save_dir = f"Plots/{name}"
-    model_dir = f"Model/{name}"
+    save_dir = f"../Plots/{name}"
+    model_dir = f"../Model/{name}"
 
     if not os.path.isdir(save_dir):
         os.mkdir(save_dir)
@@ -124,8 +119,6 @@ if __name__ == "__main__":
                                                                                     test_dir=test_dir,
                                                                                     batch_size=BATCH_SIZE,
                                                                                     image_size=IMAGE_SIZE)
-    
-
     if len(sys.argv) > 1:
         is_train = sys.argv[1]
     else:

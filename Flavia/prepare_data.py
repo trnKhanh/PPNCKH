@@ -8,7 +8,6 @@ if __name__ == "__main__":
     if not os.path.isdir(train_dir):
         os.mkdir(train_dir)
     response = requests.get("https://flavia.sourceforge.net/")
-    # print(response.text)
     soup = BeautifulSoup(response.text, 'html.parser')
     image_id = []
     img_num = []
@@ -29,6 +28,4 @@ if __name__ == "__main__":
         
         for id in range(item["first"], item["last"] + 1):
             shutil.copy(f"Leaves/{id}.jpg", f'{train_dir}/{item["name"]}')
-    # img_num.sort()
-    # print(img_num)
 
